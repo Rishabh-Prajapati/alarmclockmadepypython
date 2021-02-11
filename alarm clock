@@ -1,0 +1,31 @@
+from datetime import datetime
+import time
+from playsound import playsound
+import pyttsx3
+
+
+alarmtime = "09:40"
+alarmtime2 = "09:45"
+alarmtime3 = "12:07"
+
+while True:
+    lcltime = datetime.now().strftime('%H:%M')
+    if lcltime == alarmtime:
+    
+        playsound("select your own music file")
+
+    if lcltime == alarmtime2:
+        playsound("select your own music file")
+
+        
+
+    if lcltime == alarmtime3:
+        playsound("select your own music file")
+        playsound("select your own music file")
+        playsound("select your own music file")
+        playsound("select your own music file")
+       
+        break
+    else:
+        print("not yet")
+        time.sleep(10)
